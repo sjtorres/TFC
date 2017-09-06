@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -33,7 +33,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GIT <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Instalação</a></li>
+								<li><a href="#git">GIT</a></li>						
+								<li><a href="#instalacao">Instalação</a></li>
+								<li><a href="#github">github</a></li>
 								<li><a href="#config">git config</a></li>
 								<li><a href="#init">git init</a></li>
 								<li><a href="#clone">git clone</a></li>
@@ -53,63 +55,78 @@
 		</nav>
 	</header>
 
-	<div class="container-fluid">
-		<div class="content">
-			<h1>TRABALHO SOBRE FERRAMENTAS DE PLANEJAMENTO E CONTROLE</h1>
-			<p>Realize uma pesquisa na internet e apresente 02 ferramentas de gestão de projeto (uma gratuita e uma paga) com as funções de: planejamento, controle, comunicação, conflito, inspeção e revisão de projetos.</p>
+	<div class="jumbotron">
+		<div class="container">
+			<h2 class="text-center">FACULDADE FATECIE PARANAVAÍ <br>
+
+				Disciplina: Analise e Projetos de Sistemas para Internet	<br>
+				Prof. Me. Hudson Souza – hudsonss@gmail.com
+			</h2>
+			<h2 class="text-center">Nome: Sandro Torres                                                                  RA: 4242 <br>
+				Nome: Tiago Silva                                                                       RA: 4046 <br>
+				Nome: Wesley Adonai                                                               RA: 4246 <br>
+			</h2><br>
+			<h1>TRABALHO SOBRE FERRAMENTAS DE PLANEJAMENTO E CONTROLE</h1><br>
+			<h2>Realize uma pesquisa na internet e apresente 02 ferramentas de gestão de projeto (uma gratuita e uma paga) com as funções de: planejamento, controle, comunicação, conflito, inspeção e revisão de projetos.</h2>
 		</div>
 	</div>
 
-	<div class="container-fluid">
-		<div class="content">
-			<h1>FERRAMENTAS DE CONTROLE ESCOLHIDA</h1>
-			<img src="img/Git-Logo-2Color.png" class="img-responsive" alt="Logo Git">
-			<p>Sistema de controle de versão de arquivos desenvolvido inicialmente por Linus Torvalds.</p>
+	<div id="git" class="jumbotron">
+		<div class="container">
+			<h1 class="text-center">FERRAMENTAS DE CONTROLE ESCOLHIDA</h1>
+			<img src="img/Git-Logo-2Color.png" class="img-responsive center-block" alt="Logo Git">
+			<h2 class="text-center">Sistema de controle de versão de arquivos desenvolvido inicialmente por Linus Torvalds.</h2>
 		</div>
 	</div>
 
-	<div class="container-fluid">
-		<div class="content">
-			<img src="img/git-logo.jpg" class="img-responsive" alt="Git logo menor">
-			<h2>https://git-scm.com</h2>
-			<p>O GIT pode ser baixado nas versões Windows, Mac e através do comando: sudo apt-get install git para plataformas Linux/Debian</p>
+	<div id="instalacao" class="jumbotron">
+		<div class="container">
+			<img src="img/git-logo.jpg" class="img-responsive center-block" alt="Git logo menor">
+			<h1 class="text-center">https://git-scm.com</h1>
+			<h2 class="text-center">O GIT pode ser baixado nas versões Windows, Mac e através do comando: sudo apt-get install git para plataformas Linux/Debian</h2>
 		</div>
 	</div>
 
-	<div id="github" class="container-fluid">
-		<div class="content">
-			<img src="img/git-logo.jpg" class="img-responsive" alt="Git logo menor">
-			<h2>GITHUB - CRIANDO REPOSITÓRIO</h2>
-			<h3>https://github.com/</h3>
-			<img src="img/repositorio.jpg" class="img-responsive" alt="Repositorio Git">
-			<img src="img/CriarRep.jpg" class="img-responsive" alt="Repositório GitHub">
-		</div>
-	</div>
+	<div id="github" class="jumbotron">
+		<div class="container">
+			<img src="img/git-logo.jpg" class="img-responsive center-block" alt="Git logo menor">
+			<h1 class="text-center">GITHUB - CRIANDO REPOSITÓRIO</h1>
+			<h2 class="text-center">https://github.com/</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/repositorio.jpg" class="img-responsive " alt="Repositorio Git"></div>
+					<div class="col-md-6">
+						<img src="img/CriarRep.jpg" class="img-responsive" alt="Repositório GitHub">
 
-	<div id="config" class="container-fluid">
-		<div class="content">
-			<h2>TERMINAL – PRIMEIROS PASSOS</h2>
-			<p>git config --global user.name "equipe west" 
-				git config --global user.email west@contato.com</p>
-				<img src="img/config.jpg" class="img-responsive" alt="Git config">
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="init" class="container-fluid">
-			<div class="content">
-				<h2>TERMINAL – PRIMEIROS PASSOS</h2>
-				<p>$ git init</p>
-				<img src="img/init.jpg" class="img-responsive" alt="Git init">
+	<div id="config" class="jumbotron">
+		<div class="container">
+				<h1>TERMINAL – PRIMEIROS PASSOS</h1>
+				<h2>git config --global user.name "equipe west" <br>
+					git config --global user.email west@contato.com</h2>
+					<img src="img/config.jpg" class="img-responsive" alt="Git config">
+				</div>
 			</div>
-		</div>
 
-		<div id="init" class="container-fluid">
-			<div class="content">
-				<h2>TERMINAL – PRIMEIROS PASSOS</h2>
-				<p>$ git init</p>
-				<img src="img/init.jpg" class="img-responsive" alt="Git init">
+			<div id="init" class="container-fluid">
+				<div class="content">
+					<h2>TERMINAL – PRIMEIROS PASSOS</h2>
+					<p>$ git init</p>
+					<img src="img/init.jpg" class="img-responsive" alt="Git init">
+				</div>
 			</div>
-		</div>
+
+			<div id="init" class="container-fluid">
+				<div class="content">
+					<h2>TERMINAL – PRIMEIROS PASSOS</h2>
+					<p>$ git init</p>
+					<img src="img/init.jpg" class="img-responsive" alt="Git init">
+				</div>
+			</div>
 
 
 
@@ -118,9 +135,9 @@
 
 
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-	</body>
-	</html>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+		</body>
+		</html>
